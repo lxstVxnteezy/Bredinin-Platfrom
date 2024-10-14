@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.Api", "Bredinin.TestProject.Service.Api\Bredinin.TestProject.Service.Api.csproj", "{62EBFDCD-6BD4-44D1-9B07-0E9DDE8EFEE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bredinin.TestProject.Service.Api", "Bredinin.TestProject.Service.Api\Bredinin.TestProject.Service.Api.csproj", "{62EBFDCD-6BD4-44D1-9B07-0E9DDE8EFEE0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{F9265791-3763-4F95-B216-956CA7ACAE4E}"
 EndProject
@@ -17,11 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{326954
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Handlers", "Handlers", "{7913C186-9479-40CE-A35F-C34982AF666D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.Domain", "Bredinin.TestProject.Service.Domain\Bredinin.TestProject.Service.Domain.csproj", "{1220EFCD-4380-45B6-950A-E5E031FA20D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bredinin.TestProject.Service.Domain", "Bredinin.TestProject.Service.Domain\Bredinin.TestProject.Service.Domain.csproj", "{1220EFCD-4380-45B6-950A-E5E031FA20D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.DataContext", "Bredinin.TestProject.Service.DataContext\Bredinin.TestProject.Service.DataContext.csproj", "{55BF8456-83C7-475E-AA49-4699976E17B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bredinin.TestProject.Service.DataContext", "Bredinin.TestProject.Service.DataContext\Bredinin.TestProject.Service.DataContext.csproj", "{55BF8456-83C7-475E-AA49-4699976E17B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.DataContext.DataAccess", "Bredinin.TestProject.Service.DataContext.DataAccess\Bredinin.TestProject.Service.DataContext.DataAccess.csproj", "{455EC526-56A2-44B7-90B5-C3334AAAB775}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bredinin.TestProject.Service.DataContext.DataAccess", "Bredinin.TestProject.Service.DataContext.DataAccess\Bredinin.TestProject.Service.DataContext.DataAccess.csproj", "{455EC526-56A2-44B7-90B5-C3334AAAB775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.DataContext.Migration", "Bredinin.TestProject.Service.DataContext.Migration\Bredinin.TestProject.Service.DataContext.Migration.csproj", "{28821B7F-617C-44FB-B6F1-A7EA447A7AEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{455EC526-56A2-44B7-90B5-C3334AAAB775}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{455EC526-56A2-44B7-90B5-C3334AAAB775}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{455EC526-56A2-44B7-90B5-C3334AAAB775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28821B7F-617C-44FB-B6F1-A7EA447A7AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28821B7F-617C-44FB-B6F1-A7EA447A7AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28821B7F-617C-44FB-B6F1-A7EA447A7AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28821B7F-617C-44FB-B6F1-A7EA447A7AEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{1220EFCD-4380-45B6-950A-E5E031FA20D6} = {326954A4-9BED-473F-B678-FDAC40E437C8}
 		{55BF8456-83C7-475E-AA49-4699976E17B5} = {63DD5607-EBF3-48B7-A4F5-281DF9ADECDB}
 		{455EC526-56A2-44B7-90B5-C3334AAAB775} = {63DD5607-EBF3-48B7-A4F5-281DF9ADECDB}
+		{28821B7F-617C-44FB-B6F1-A7EA447A7AEF} = {63DD5607-EBF3-48B7-A4F5-281DF9ADECDB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B9FE009-077C-46BA-803A-B23E24D3A5CA}
