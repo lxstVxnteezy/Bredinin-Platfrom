@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.Api", "Bredinin.TestProject.Service.Api\Bredinin.TestProject.Service.Api.csproj", "{62EBFDCD-6BD4-44D1-9B07-0E9DDE8EFEE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62EBFDCD-6BD4-44D1-9B07-0E9DDE8EFEE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62EBFDCD-6BD4-44D1-9B07-0E9DDE8EFEE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62EBFDCD-6BD4-44D1-9B07-0E9DDE8EFEE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62EBFDCD-6BD4-44D1-9B07-0E9DDE8EFEE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B9FE009-077C-46BA-803A-B23E24D3A5CA}
+	EndGlobalSection
+EndGlobal
