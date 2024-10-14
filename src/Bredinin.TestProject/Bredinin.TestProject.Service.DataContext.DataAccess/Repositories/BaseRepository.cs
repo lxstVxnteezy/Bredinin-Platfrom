@@ -4,7 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Bredinin.TestProject.DataContext.DataAccess.Repositories
 {
-    internal class BaseRepository <TEntity> : IRepository<TEntity> where TEntity : BaseEntity
+    internal class BaseRepository <TEntity> : IRepository<TEntity> 
+        where TEntity : BaseEntity
     {
         protected readonly ServiceContext Context;
 
