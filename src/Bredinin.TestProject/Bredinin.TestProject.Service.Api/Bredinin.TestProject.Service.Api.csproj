@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Bredinin.TestProject.Service.Core.Swagger\Bredinin.TestProject.Service.Core.Swagger.csproj" />
     <ProjectReference Include="..\Bredinin.TestProject.Service.DataContext.DataAccess\Bredinin.TestProject.Service.DataContext.DataAccess.csproj" />
     <ProjectReference Include="..\Bredinin.TestProject.Service.DataContext.Migration\Bredinin.TestProject.Service.DataContext.Migration.csproj" />
   </ItemGroup>
