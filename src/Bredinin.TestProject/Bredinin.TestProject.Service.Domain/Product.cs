@@ -9,6 +9,6 @@ namespace Bredinin.TestProject.Service.Domain
         public decimal? Price { get; set; } 
 
         public virtual ProductCategory? ProductCategory { get; set; }
-        public Guid? CategoryId { get; set; }
+        public Guid? ProductCategoryId { get; set; }
     }
 }

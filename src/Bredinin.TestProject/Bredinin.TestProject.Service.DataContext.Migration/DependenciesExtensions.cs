@@ -16,7 +16,7 @@ namespace Bredinin.TestProject.Service.DataContext.Migration
             services.AddFluentMigratorCore().ConfigureRunner(r => r.AddPostgres()
                     .WithGlobalConnectionString(connStr)
                     .WithRunnerConventions(new MigrationRunnerConventions())
-                    .ScanIn(typeof(Migration_2024_10_04_0830).Assembly).For.Migrations())
+                    .ScanIn(typeof(Migration_2024_10_14_0830).Assembly).For.Migrations())
                 .AddLogging(l => l.AddFluentMigratorConsole());
 
             services.AddScoped(typeof(IVersionTableMetaData), typeof(VersionTableMetaData));

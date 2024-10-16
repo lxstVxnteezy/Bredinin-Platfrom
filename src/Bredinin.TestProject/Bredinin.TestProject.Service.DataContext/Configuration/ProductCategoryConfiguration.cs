@@ -13,6 +13,11 @@ namespace Bredinin.TestProject.Service.DataContext.Configuration
             builder.Property(x => x.Id).HasColumnName("id");
             builder.Property(x => x.Name).HasColumnName("name");
             builder.Property(x => x.Description).HasColumnName("description");
+
+            builder.HasMany(x => x.Products)
+                .WithOne(x => x.ProductCategory)
+                .HasForeignKey(x => x.ProductCategoryId)
+                .IsRequired();
         }
     }
 }
