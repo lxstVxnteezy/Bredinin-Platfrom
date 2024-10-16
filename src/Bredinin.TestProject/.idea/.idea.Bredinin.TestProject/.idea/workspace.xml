@@ -7,8 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6f89040f-072a-4585-9e7e-3d9dfca153d6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bredinin.TestProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bredinin.TestProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bredinin.TestProject.Service.DataContext.DataAccess/Repositories/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bredinin.TestProject.Service.DataContext.DataAccess/Repositories/BaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bredinin.TestProject.Service.DataContext.DataAccess/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bredinin.TestProject.Service.DataContext.DataAccess/UnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bredinin.TestProject.Service.Api/Bredinin.TestProject.Service.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Bredinin.TestProject.Service.Api/Bredinin.TestProject.Service.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bredinin.TestProject.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Bredinin.TestProject.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +72,7 @@
       <updated>1728933917469</updated>
       <workItem from="1728933931382" duration="37000" />
       <workItem from="1728936057343" duration="107000" />
+      <workItem from="1729079627684" duration="58000" />
     </task>
     <servers />
   </component>

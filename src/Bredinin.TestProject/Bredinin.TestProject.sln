@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bredinin.TestProject.Servic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.Core.Swagger", "Bredinin.TestProject.Service.Core.Swagger\Bredinin.TestProject.Service.Core.Swagger.csproj", "{A18A60E2-CB31-4A95-98CE-573D56E22CB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.Core", "Bredinin.TestProject.Service.Core\Bredinin.TestProject.Service.Core.csproj", "{33B0604C-16F6-4C79-A292-8B6CCA246B06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{A18A60E2-CB31-4A95-98CE-573D56E22CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A18A60E2-CB31-4A95-98CE-573D56E22CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A18A60E2-CB31-4A95-98CE-573D56E22CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B0604C-16F6-4C79-A292-8B6CCA246B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B0604C-16F6-4C79-A292-8B6CCA246B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B0604C-16F6-4C79-A292-8B6CCA246B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B0604C-16F6-4C79-A292-8B6CCA246B06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{455EC526-56A2-44B7-90B5-C3334AAAB775} = {63DD5607-EBF3-48B7-A4F5-281DF9ADECDB}
 		{28821B7F-617C-44FB-B6F1-A7EA447A7AEF} = {63DD5607-EBF3-48B7-A4F5-281DF9ADECDB}
 		{A18A60E2-CB31-4A95-98CE-573D56E22CB7} = {5221F9AD-AF61-4BCB-ABB7-3FDC141DB875}
+		{33B0604C-16F6-4C79-A292-8B6CCA246B06} = {5221F9AD-AF61-4BCB-ABB7-3FDC141DB875}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B9FE009-077C-46BA-803A-B23E24D3A5CA}

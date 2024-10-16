@@ -1,4 +1,5 @@
 ﻿using Bredinin.TestProject.DataContext.DataAccess;
+using Bredinin.TestProject.Service.Api.Middlewares.Http;
 using Bredinin.TestProject.Service.Core.Swagger;
 using Bredinin.TestProject.Service.DataContext.Migration;
 using HealthChecks.UI.Client;
@@ -27,6 +28,8 @@ namespace Bredinin.TestProject.Service.Api
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseRouting();
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
@@ -36,6 +39,7 @@ namespace Bredinin.TestProject.Service.Api
                     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
                 });
             });
+
             app.UseHttpsRedirection();
             app.UseSwaggerCustom();
             app.UseAuthorization();
