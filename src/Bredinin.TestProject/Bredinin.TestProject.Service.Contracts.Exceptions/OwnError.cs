@@ -20,6 +20,21 @@ namespace Bredinin.TestProject.Service.Contracts.Exceptions
         CanNotDeleteProductCategory = 3,
 
         #endregion
+
+        #region Product
+        [ServiceOwnError(message: "Unable to create product ")]
+        UnableToCreateProduct = 4,
+
+        [ServiceOwnError(message: "Unable to delete product ")]
+        CanNotDeleteProduct = 5,
+
+        [ServiceOwnError(message: "Unable to find product ")]
+        UnableToFindProduct = 6,
+
+        [ServiceOwnError(message: "Unable to update product ")]
+        CanNotUpdateProduct = 7,
+
+        #endregion
     }
 
 }

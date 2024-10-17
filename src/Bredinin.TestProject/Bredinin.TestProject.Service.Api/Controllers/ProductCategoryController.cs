@@ -11,9 +11,9 @@ namespace Bredinin.TestProject.Service.Api.Controllers
     public class ProductCategoryController:BaseApiController
     {
         [HttpPost("/create")]
-        public Task<ProductCategoryResponse> Create(
+        public Task<ProductCategoryCreateResponse> Create(
             [FromServices] IProductCategoryCreateHandler handler,
-            [FromBody] ProductCategoryRequest request,
+            [FromBody] ProductCategoryCreateRequest request,
             CancellationToken ctn)
         {
             return handler.Handle(request, ctn);
@@ -38,7 +38,7 @@ namespace Bredinin.TestProject.Service.Api.Controllers
             return handler.Handle(id, ctn);
         }
 
-        [HttpGet ("/getList")]
+        [HttpGet ("/getProductCategories")]
         public Task<InfoProductCategoryResponse[]> Get(
             [FromServices] IProductCategorySearchHandler handler, 
             CancellationToken ctn)

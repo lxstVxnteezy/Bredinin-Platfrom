@@ -8,7 +8,7 @@ namespace Bredinin.TestProject.Service.Http.Handlers.Methods.ProductCategory
 {
     public interface IProductCategoryCreateHandler : IHandler
     {
-        Task<ProductCategoryResponse> Handle(ProductCategoryRequest request, CancellationToken ctn);
+        Task<ProductCategoryCreateResponse> Handle(ProductCategoryCreateRequest request, CancellationToken ctn);
     }
     internal class ProductCategoryCreateHandler : IProductCategoryCreateHandler
     {
@@ -19,7 +19,7 @@ namespace Bredinin.TestProject.Service.Http.Handlers.Methods.ProductCategory
             _productCategoryRepository = productCategory;
         }
 
-        public async Task<ProductCategoryResponse> Handle(ProductCategoryRequest request, CancellationToken ctn)
+        public async Task<ProductCategoryCreateResponse> Handle(ProductCategoryCreateRequest request, CancellationToken ctn)
         {
             AssertExistProductCategory(request);
 
@@ -34,16 +34,15 @@ namespace Bredinin.TestProject.Service.Http.Handlers.Methods.ProductCategory
 
             await _productCategoryRepository.SaveChanges(ctn);
 
-            return new ProductCategoryResponse(Id: newProductCategory.Id);
+            return new ProductCategoryCreateResponse(Id: newProductCategory.Id);
 
         }
 
-        private void AssertExistProductCategory(ProductCategoryRequest request)
+        private void AssertExistProductCategory(ProductCategoryCreateRequest request)
         {
             var isExist = _productCategoryRepository.Query.Any(x => x.Name == request.Name);
             if (isExist)
                 throw OwnError.UnableToCreateProductCategory.ToException($"Category with name = {request.Name} already exists");
-
         }
     }
 }

@@ -6,9 +6,9 @@ namespace Bredinin.TestProject.Service.Domain
     {
         public string Name { get; set; } = null!;
         public string Description { get; set; } = null!;
-        public decimal? Price { get; set; } 
+        public decimal Price { get; set; } 
 
         public virtual ProductCategory? ProductCategory { get; set; }
-        public Guid? ProductCategoryId { get; set; }
+        public Guid ProductCategoryId { get; set; }
     }
 }
