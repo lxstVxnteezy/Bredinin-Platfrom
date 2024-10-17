@@ -2,6 +2,7 @@
 using Bredinin.TestProject.Service.Api.Middlewares.Http;
 using Bredinin.TestProject.Service.Core.Swagger;
 using Bredinin.TestProject.Service.DataContext.Migration;
+using Bredinin.TestProject.Service.Http.Handlers;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
@@ -9,26 +10,27 @@ namespace Bredinin.TestProject.Service.Api
 {
     public class Startup
     {
-        private readonly IConfiguration _configuration;
+        public IConfiguration Configuration;
 
         public Startup(IConfiguration configuration)
         {
-            _configuration = configuration;
+            Configuration = configuration;
         }
 
         public void ConfigureServices(IServiceCollection services)
         { 
             services.AddControllers();
             services.AddHealthChecks();
-            services.AddDataAccess(_configuration);
-            services.AddMigration(_configuration);
+            services.AddDataAccess(Configuration);
+            services.AddMigration(Configuration);
             services.AddSwagger();
+            services.AddHttpHandlers();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseRouting();
-            app.UseMiddleware<ExceptionHandlingMiddleware>();
+                app.UseMiddleware<ExceptionHandlingMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {
@@ -42,8 +44,7 @@ namespace Bredinin.TestProject.Service.Api
 
             app.UseHttpsRedirection();
             app.UseSwaggerCustom();
-            app.UseAuthorization();
-            app.Migrate(_configuration);
+            app.Migrate(Configuration);    
 
         }
 

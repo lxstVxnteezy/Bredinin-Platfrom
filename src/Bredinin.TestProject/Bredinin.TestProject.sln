@@ -25,9 +25,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bredinin.TestProject.Servic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bredinin.TestProject.Service.DataContext.Migration", "Bredinin.TestProject.Service.DataContext.Migration\Bredinin.TestProject.Service.DataContext.Migration.csproj", "{28821B7F-617C-44FB-B6F1-A7EA447A7AEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.Core.Swagger", "Bredinin.TestProject.Service.Core.Swagger\Bredinin.TestProject.Service.Core.Swagger.csproj", "{A18A60E2-CB31-4A95-98CE-573D56E22CB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bredinin.TestProject.Service.Core.Swagger", "Bredinin.TestProject.Service.Core.Swagger\Bredinin.TestProject.Service.Core.Swagger.csproj", "{A18A60E2-CB31-4A95-98CE-573D56E22CB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.Core", "Bredinin.TestProject.Service.Core\Bredinin.TestProject.Service.Core.csproj", "{33B0604C-16F6-4C79-A292-8B6CCA246B06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bredinin.TestProject.Service.Core", "Bredinin.TestProject.Service.Core\Bredinin.TestProject.Service.Core.csproj", "{33B0604C-16F6-4C79-A292-8B6CCA246B06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.Http.Handlers", "Bredinin.TestProject.Service.Http.Handlers\Bredinin.TestProject.Service.Http.Handlers.csproj", "{AE8F586C-2828-423A-8058-AC7AF35C6224}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.Contracts", "Bredinin.TestProject.Service.Contracts\Bredinin.TestProject.Service.Contracts.csproj", "{BC6B9FDB-E4E3-4D08-AA7B-79FFD092A889}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.Contracts.Exceptions", "Bredinin.TestProject.Service.Contracts.Exceptions\Bredinin.TestProject.Service.Contracts.Exceptions.csproj", "{D7E7E891-769F-44B0-BD6E-DC2A424AEE15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D0D909D3-4885-4E6B-9081-C694D603FDDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.Common", "Bredinin.TestProject.Service.Common\Bredinin.TestProject.Service.Common.csproj", "{AE37D51E-8C01-45F1-AA9A-83FA07707641}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +73,22 @@ Global
 		{33B0604C-16F6-4C79-A292-8B6CCA246B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33B0604C-16F6-4C79-A292-8B6CCA246B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33B0604C-16F6-4C79-A292-8B6CCA246B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE8F586C-2828-423A-8058-AC7AF35C6224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE8F586C-2828-423A-8058-AC7AF35C6224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE8F586C-2828-423A-8058-AC7AF35C6224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE8F586C-2828-423A-8058-AC7AF35C6224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC6B9FDB-E4E3-4D08-AA7B-79FFD092A889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC6B9FDB-E4E3-4D08-AA7B-79FFD092A889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC6B9FDB-E4E3-4D08-AA7B-79FFD092A889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC6B9FDB-E4E3-4D08-AA7B-79FFD092A889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E7E891-769F-44B0-BD6E-DC2A424AEE15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E7E891-769F-44B0-BD6E-DC2A424AEE15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E7E891-769F-44B0-BD6E-DC2A424AEE15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E7E891-769F-44B0-BD6E-DC2A424AEE15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE37D51E-8C01-45F1-AA9A-83FA07707641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE37D51E-8C01-45F1-AA9A-83FA07707641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE37D51E-8C01-45F1-AA9A-83FA07707641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE37D51E-8C01-45F1-AA9A-83FA07707641}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +106,11 @@ Global
 		{28821B7F-617C-44FB-B6F1-A7EA447A7AEF} = {63DD5607-EBF3-48B7-A4F5-281DF9ADECDB}
 		{A18A60E2-CB31-4A95-98CE-573D56E22CB7} = {5221F9AD-AF61-4BCB-ABB7-3FDC141DB875}
 		{33B0604C-16F6-4C79-A292-8B6CCA246B06} = {5221F9AD-AF61-4BCB-ABB7-3FDC141DB875}
+		{AE8F586C-2828-423A-8058-AC7AF35C6224} = {7913C186-9479-40CE-A35F-C34982AF666D}
+		{BC6B9FDB-E4E3-4D08-AA7B-79FFD092A889} = {C3E76A8F-A654-4C5E-9175-88253A1B27EC}
+		{D7E7E891-769F-44B0-BD6E-DC2A424AEE15} = {C3E76A8F-A654-4C5E-9175-88253A1B27EC}
+		{D0D909D3-4885-4E6B-9081-C694D603FDDD} = {F9265791-3763-4F95-B216-956CA7ACAE4E}
+		{AE37D51E-8C01-45F1-AA9A-83FA07707641} = {D0D909D3-4885-4E6B-9081-C694D603FDDD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B9FE009-077C-46BA-803A-B23E24D3A5CA}

@@ -1,5 +1,5 @@
 ﻿using System.Net;
-using Bredinin.TestProject.Service.Core;
+using Bredinin.TestProject.Service.Core.Exceptions;
 
 namespace Bredinin.TestProject.Service.Api.Middlewares.Http
 {

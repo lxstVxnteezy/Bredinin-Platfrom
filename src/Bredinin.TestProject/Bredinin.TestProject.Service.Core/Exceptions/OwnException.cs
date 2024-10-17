@@ -1,4 +1,4 @@
-﻿namespace Bredinin.TestProject.Service.Core
+﻿namespace Bredinin.TestProject.Service.Core.Exceptions
 {
     public class OwnException : Exception
     {

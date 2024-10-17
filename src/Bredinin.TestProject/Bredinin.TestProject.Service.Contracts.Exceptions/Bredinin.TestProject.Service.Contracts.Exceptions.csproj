@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bredinin.TestProject.Service.Common\Bredinin.TestProject.Service.Common.csproj" />
+    <ProjectReference Include="..\Bredinin.TestProject.Service.Core\Bredinin.TestProject.Service.Core.csproj" />
   </ItemGroup>
 
 </Project>

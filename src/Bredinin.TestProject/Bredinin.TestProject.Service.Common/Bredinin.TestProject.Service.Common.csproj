@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Bredinin.TestProject.Service.Common\Bredinin.TestProject.Service.Common.csproj" />
-  </ItemGroup>
-
 </Project>
