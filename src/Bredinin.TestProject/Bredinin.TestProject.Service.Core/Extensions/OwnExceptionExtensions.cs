@@ -1,5 +1,4 @@
-﻿
-using Bredinin.TestProject.Service.Common;
+﻿using Bredinin.TestProject.Service.Common;
 using Bredinin.TestProject.Service.Core.Exceptions;
 
 namespace Bredinin.TestProject.Service.Core.Extensions

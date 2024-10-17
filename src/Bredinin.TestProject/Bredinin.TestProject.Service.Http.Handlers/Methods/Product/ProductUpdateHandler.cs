@@ -1,6 +1,5 @@
 ﻿using Bredinin.TestProject.DataContext.DataAccess.Repositories;
 using Bredinin.TestProject.Service.Contracts.Exceptions;
-using Bredinin.TestProject.Service.Contracts.Product.Create;
 using Bredinin.TestProject.Service.Contracts.Product.Update;
 using Bredinin.TestProject.Service.Core.Extensions;
 
@@ -54,7 +53,6 @@ namespace Bredinin.TestProject.Service.Http.Handlers.Methods.Product
             var IsExist = _productCategoryRepository.Query.SingleOrDefault(x => x.Id == request.ProductCategoryId);
             if (IsExist == null)
                 throw OwnError.UnableToCreateProduct.ToException($"Category with id = {request.ProductCategoryId} not found in db");
-
         }
     }
 }

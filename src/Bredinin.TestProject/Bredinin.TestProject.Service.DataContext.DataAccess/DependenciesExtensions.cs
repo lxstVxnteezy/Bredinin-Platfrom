@@ -15,7 +15,6 @@ namespace Bredinin.TestProject.DataContext.DataAccess
             services.AddDbContext<ServiceContext>(options => options.UseNpgsql(connStr!));
 
             services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             return services;
         }
