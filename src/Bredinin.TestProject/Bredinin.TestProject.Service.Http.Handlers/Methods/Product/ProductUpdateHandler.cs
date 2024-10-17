@@ -1,5 +1,6 @@
 ﻿using Bredinin.TestProject.DataContext.DataAccess.Repositories;
 using Bredinin.TestProject.Service.Contracts.Exceptions;
+using Bredinin.TestProject.Service.Contracts.Product.Create;
 using Bredinin.TestProject.Service.Contracts.Product.Update;
 using Bredinin.TestProject.Service.Core.Extensions;
 
@@ -16,13 +17,18 @@ namespace Bredinin.TestProject.Service.Http.Handlers.Methods.Product
     internal class ProductUpdateHandler : IProductUpdateHandler
     {
         private readonly IRepository<Domain.Product> _productRepository;
+        private readonly IRepository<Domain.ProductCategory> _productCategoryRepository;
 
-        public ProductUpdateHandler(IRepository<Domain.Product> productRepository)
+        public ProductUpdateHandler(
+            IRepository<Domain.Product> productRepository, 
+            IRepository<Domain.ProductCategory> productCategoryRepository)
         {
             _productRepository = productRepository;
+            _productCategoryRepository = productCategoryRepository;
         }
         public async Task<UpdateProductResponse> Handle(Guid id, UpdateProductRequest request, CancellationToken ctn)
         {
+            AssertExistCategory(request);
             var foundProduct = await _productRepository.FoundByIdAsync(id, ctn);
             if (foundProduct == null)
             {
@@ -43,6 +49,12 @@ namespace Bredinin.TestProject.Service.Http.Handlers.Methods.Product
               foundProduct.Price,
               foundProduct.ProductCategoryId);
         }
+        private void AssertExistCategory(UpdateProductRequest request)
+        {
+            var IsExist = _productCategoryRepository.Query.SingleOrDefault(x => x.Id == request.ProductCategoryId);
+            if (IsExist == null)
+                throw OwnError.UnableToCreateProduct.ToException($"Category with id = {request.ProductCategoryId} not found in db");
 
+        }
     }
 }

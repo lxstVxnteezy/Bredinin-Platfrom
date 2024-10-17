@@ -1,6 +1,7 @@
 ﻿using Bredinin.TestProject.DataContext.DataAccess;
 using Bredinin.TestProject.Service.Api.Middlewares.Http;
 using Bredinin.TestProject.Service.Core.Swagger;
+using Bredinin.TestProject.Service.Core.Validation;
 using Bredinin.TestProject.Service.DataContext.Migration;
 using Bredinin.TestProject.Service.Http.Handlers;
 using HealthChecks.UI.Client;
@@ -25,6 +26,7 @@ namespace Bredinin.TestProject.Service.Api
             services.AddMigration(Configuration);
             services.AddSwagger();
             services.AddHttpHandlers();
+            services.AddValidation();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

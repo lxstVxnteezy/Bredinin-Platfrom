@@ -12,15 +12,20 @@ namespace Bredinin.TestProject.Service.Http.Handlers.Methods.Product
     internal class ProductCreateHandler : IProductCreateHandler
     {
         private readonly IRepository<Domain.Product> _productRepository;
+        private readonly IRepository<Domain.ProductCategory> _productCategoryRepository;
 
-        public ProductCreateHandler(IRepository<Domain.Product> productRepository)
+        public ProductCreateHandler(
+            IRepository<Domain.Product> productRepository, 
+            IRepository<Domain.ProductCategory> productCategoryRepository)
         {
             _productRepository = productRepository;
+            _productCategoryRepository = productCategoryRepository;
         }
 
         public async Task<ProductCreateResponse> Handle(ProductCreateRequest request, CancellationToken ctn)
         {
-            AssertExistProductCategory(request);
+            AssertExistProduct(request);
+            AssertExistCategory(request);
 
             var newProduct = new Domain.Product
             {
@@ -39,7 +44,15 @@ namespace Bredinin.TestProject.Service.Http.Handlers.Methods.Product
 
         }
 
-        private void AssertExistProductCategory(ProductCreateRequest request)
+        private void AssertExistCategory(ProductCreateRequest request)
+        {
+            var IsExist = _productCategoryRepository.Query.SingleOrDefault(x => x.Id == request.ProductCategoryId);
+            if (IsExist == null)
+                throw OwnError.UnableToCreateProduct.ToException($"Category with id = {request.ProductCategoryId} not found in db");
+
+        }
+
+        private void AssertExistProduct(ProductCreateRequest request)
         {
             var isExist = _productRepository.Query.Any(x => x.Name == request.Name);
             if (isExist)

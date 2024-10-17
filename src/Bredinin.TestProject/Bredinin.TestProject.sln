@@ -39,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D0D909
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.Common", "Bredinin.TestProject.Service.Common\Bredinin.TestProject.Service.Common.csproj", "{AE37D51E-8C01-45F1-AA9A-83FA07707641}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bredinin.TestProject.Service.Core.Validation", "Bredinin.TestProject.Service.Core.Validation\Bredinin.TestProject.Service.Core.Validation.csproj", "{9340DEC4-177B-4E55-B4D7-D6A554E84BA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,10 @@ Global
 		{AE37D51E-8C01-45F1-AA9A-83FA07707641}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE37D51E-8C01-45F1-AA9A-83FA07707641}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE37D51E-8C01-45F1-AA9A-83FA07707641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9340DEC4-177B-4E55-B4D7-D6A554E84BA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9340DEC4-177B-4E55-B4D7-D6A554E84BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9340DEC4-177B-4E55-B4D7-D6A554E84BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9340DEC4-177B-4E55-B4D7-D6A554E84BA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -111,6 +117,7 @@ Global
 		{D7E7E891-769F-44B0-BD6E-DC2A424AEE15} = {C3E76A8F-A654-4C5E-9175-88253A1B27EC}
 		{D0D909D3-4885-4E6B-9081-C694D603FDDD} = {F9265791-3763-4F95-B216-956CA7ACAE4E}
 		{AE37D51E-8C01-45F1-AA9A-83FA07707641} = {D0D909D3-4885-4E6B-9081-C694D603FDDD}
+		{9340DEC4-177B-4E55-B4D7-D6A554E84BA6} = {5221F9AD-AF61-4BCB-ABB7-3FDC141DB875}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B9FE009-077C-46BA-803A-B23E24D3A5CA}
