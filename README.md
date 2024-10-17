@@ -105,7 +105,7 @@ dotnet restore
 ```bash
 dotnet run
 ```
-### Приложение прослушивается по адресу: https://localhost:7262
+Приложение прослушивается по адресу: https://localhost:7262
 
 
 ## Подключение к базе данных
@@ -123,5 +123,10 @@ dotnet run
   }
 }
 ```
-## Список всех ENDPOINTs можно получить по https://localhost:7262/swagger/index.html через Swagger(Полная документация API с помощью Swagger.)
+
+## Документация API доступна по адресу:
+
+```bash
+https://localhost:7262/swagger/index.html
+```
 
